@@ -13,22 +13,21 @@ export default function ProductCard({ product }) {
   };
 
   return (
-    <div className="">
-      <div className={`w-[16.7rem] h-64 bg-gray-100 rounded-lg shadow relative hover:bg-zinc-500 hover:opacity-80`}>
+    <div className="flex flex-col">
+      <div className={`bg-gray-100 rounded-lg shadow relative hover:bg-zinc-500 hover:opacity-80`}>
         <Image
           src={image}
           alt="product"
           width={300}
           height={300}
-          className={`w-[16.7rem] h-64 rounded-lg`}
           // onClick={handleProduct}
           onMouseEnter={() => setIsShown(true)}
           onMouseLeave={() => setIsShown(false)}
         />
         {isShown && (
-          <div className="absolute top-[7.5rem] left-[3.5rem]">
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <button
-              className={`h-11 px-8 rounded-md text-white font-semibold text-sm bg-orange-600`}
+              className={`h-11 w-32 px-8 sm:px-6 md:h-9 md:px-6 lg:h-11 rounded-md text-white font-semibold text-2xs bg-orange-600`}
               // onClick={handleLogIn}
               onMouseEnter={() => setIsShown(true)}
               onMouseLeave={() => setIsShown(false)}

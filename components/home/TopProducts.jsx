@@ -45,7 +45,6 @@ export default function TopProducts() {
     <div className="space-y-8">
       <div className="grid grid-cols-3">
         <div className="flex items-center justify-center">
-          {" "}
           <DropDown icon={"faBars"} options={["Man", "Women", "Kids"]} />
         </div>
         <div className="flex flex-col items-center space-y-5">
@@ -55,12 +54,12 @@ export default function TopProducts() {
           </span>
         </div>
         <div className="flex items-center justify-center">
-          {" "}
           <DropDown icon={"faBars"} options={["Man", "Women", "Kids"]} />
         </div>
       </div>
-      <div className="flex flex-col items-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
+      <div className="grid grid-cols-9">
+        <div className="col-span-1"></div>
+        <div className="col-span-7 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
           {products.map((product, index) => (
             <ProductCard key={index} product={product} />
           ))}
