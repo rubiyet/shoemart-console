@@ -20,7 +20,7 @@ export default function LogInButton({ isLoggedIn }) {
         </button>
       ) : (
         <button
-          className="h-11 w-28 rounded-md text-white bg-orange-600"
+          className="h-11 px-8 rounded-md text-white bg-orange-600"
           onClick={handleLogIn}
         >
           Login

@@ -14,7 +14,7 @@ export default function SearchBox() {
     <div className="relative">
       <input
         type="text"
-        className="border w-[33rem] h-11 p-5 text-sm text-gray-500 bg-white rounded-md border-gray-300 focus:outline-none"
+        className="border w-[33rem] h-11 p-5 text-sm text-gray-500 bg-white rounded-md border-gray-300 focus:ring-0 focus:border-gray-300"
         placeholder="Search For Products, Brands & Categories"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
