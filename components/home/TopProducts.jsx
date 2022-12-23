@@ -7,37 +7,37 @@ export default function TopProducts() {
       id: 1,
       name: "Product 1",
       price: 100,
-      image: "/logo.png",
+      image: "/shoe1.png",
     },
     {
       id: 2,
       name: "Product 2",
       price: 200,
-      image: "/logo.png",
+      image: "/shoe2.png",
     },
     {
       id: 3,
       name: "Product 3",
       price: 100,
-      image: "/logo.png",
+      image: "/shoe3.png",
     },
     {
       id: 4,
       name: "Product 4",
       price: 200,
-      image: "/logo.png",
+      image: "/shoe4.png",
     },
     {
       id: 5,
       name: "Product 5",
       price: 100,
-      image: "/logo.png",
+      image: "/shoe5.png",
     },
     {
       id: 6,
       name: "Product 6",
       price: 2000,
-      image: "/logo.png",
+      image: "/shoe6.png",
     },
   ];
 

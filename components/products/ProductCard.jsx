@@ -14,12 +14,13 @@ export default function ProductCard({ product }) {
 
   return (
     <div className="flex flex-col">
-      <div className={`bg-gray-100 rounded-lg shadow relative hover:bg-zinc-500 hover:opacity-80`}>
+      <div className={`rounded-lg relative border-2 border-gray-200 hover:border-gray-300`}>
         <Image
           src={image}
           alt="product"
-          width={300}
+          width={500}
           height={300}
+          className="rounded-lg"
           // onClick={handleProduct}
           onMouseEnter={() => setIsShown(true)}
           onMouseLeave={() => setIsShown(false)}
